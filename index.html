@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Build Monitor</title>
+  <style>
+    html {
+      font-family: sans-serif;
+      height: 90%;
+
+    }
+
+    body {
+      margin: 0;
+      height: 100%;
+    }
+
+    header {
+      background: lightgrey;
+      height: 70px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      line-height: 70px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 3em;
+      text-align: center;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+
+    article {
+      padding: 10px;
+      margin: 10px;
+      flex: 300px;
+      color: white;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .green {
+      background-color: darkgreen;
+    }
+
+    .yellow {
+      background-color: darkgoldenrod;
+    }
+
+    .red {
+      background-color: darkred;
+    }
+
+    .slots {
+      font-size: 2em;
+      padding: 5px;
+    }
+
+    .buildnumber {
+      width: 40%;
+      float: left;
+      padding: 5px;
+    }
+
+    .buildtimeago {
+      width: 40%;
+      float: right;
+      text-align: right;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Generic Build Monitor</h1>
+  </header>
+
+  <section>
+    <article class="red">
+
+      <a href="http://localhost:8080/view/bm/job/test2/">
+        <h2>Backend Repo</h2>
+      </a>
+
+      <div class="slots">
+        <div class="buildnumber"><a href="http://localhost:8080/view/bm/job/test2/">#1</a></div>
+        <div class="buildtimeago">13 minutes ago</div>
+      </div>
+
+    </article>
+
+    <article class="green">
+
+      <a href="http://localhost:8080/view/bm/job/test2/">
+        <h2>Frontend Repo</h2>
+      </a>
+
+      <div class="slots">
+
+        <div class="buildnumber"><a href="http://localhost:8080/view/bm/job/test2/">#1</a></div>
+
+        <div class="buildtimeago">10 minutes ago</div>
+
+      </div>
+
+    </article>
+
+    <article class="green">
+
+      <a href="http://localhost:8080/view/bm/job/test2/">
+        <h2>Infra Repo</h2>
+      </a>
+
+      <div class="slots">
+
+        <div class="buildnumber"><a href="http://localhost:8080/view/bm/job/test2/">#1</a></div>
+
+        <div class="buildtimeago">23 minutes ago</div>
+
+      </div>
+
+    </article>
+
+    <article class="yellow">
+
+      <a href="http://localhost:8080/view/bm/job/test2/">
+        <h2>Docs Repo</h2>
+      </a>
+
+      <div class="slots">
+
+        <div class="buildnumber"><a href="http://localhost:8080/view/bm/job/test2/">#1</a></div>
+
+        <div class="buildtimeago">1 minute ago</div>
+
+      </div>
+
+    </article>
+  </section>
+</body>
+
+</html>
